@@ -1,9 +1,8 @@
 class CreateStudents < ActiveRecord::Migration
   def change
-    create_table :first_name do |t|
+    create_table :students do |t|
+      t.string :first_name
       t.string :last_name
-      t.string :description
- 
       t.timestamps null: false
     end
   end
